@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\AppAlg">
+      <UniqueIdentifier>{64bbf2e8-9e06-4479-b4ee-5c1c61988339}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Custom">
+      <UniqueIdentifier>{a8cddb8c-8ef8-4826-90ef-c2bd37caf7e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\AppAlg">
+      <UniqueIdentifier>{a0f86b9a-c029-4c20-b02f-35f823d13fd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Custom">
+      <UniqueIdentifier>{cb4c8b50-e05e-4fd6-8866-c4d0b5ab07c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\InfraredImage">
+      <UniqueIdentifier>{9524b8fd-f02e-439a-a460-bc696a659750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\InfraredImage">
+      <UniqueIdentifier>{1e914153-a7f7-4ee5-8c89-0efd2d223f79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Base">
+      <UniqueIdentifier>{8e66c994-741d-4828-b0ad-389f0ec7cffc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Base">
+      <UniqueIdentifier>{80fed864-7b75-440b-8d0e-75304a99611d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Module">
+      <UniqueIdentifier>{730965d6-b309-415f-b3cc-bc1fdf434dba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Module">
+      <UniqueIdentifier>{a11e8982-e7d0-4136-ae92-a8dd10348227}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\MT">
+      <UniqueIdentifier>{4b2513cb-fecf-48c5-9e4b-b7300dab9772}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\MT">
+      <UniqueIdentifier>{3fa30609-071e-4e5d-bd13-46b8e4a9f472}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Secure">
+      <UniqueIdentifier>{f85fb673-59a4-4201-a5ac-6c84221991d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Secure">
+      <UniqueIdentifier>{6cf49fbf-87bf-4403-8a62-458d440f88cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Timo">
+      <UniqueIdentifier>{d3d3e3f7-7292-4b20-b11c-db5a53399bbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Timo">
+      <UniqueIdentifier>{71ee8b4f-30b0-4caf-83ad-74a20b97393f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ITA.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ERROR.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ITADTD.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ITACustom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ITABB.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ITALaserAF.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AppAlg\CInfraredAF.h">
+      <Filter>头文件\AppAlg</Filter>
+    </ClInclude>
+    <ClInclude Include="AppAlg\SRBicubic.h">
+      <Filter>头文件\AppAlg</Filter>
+    </ClInclude>
+    <ClInclude Include="Custom\BBMeasureCore.h">
+      <Filter>头文件\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="Custom\ITACoin.h">
+      <Filter>头文件\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="InfraredImage\CInfraredCore.h">
+      <Filter>头文件\InfraredImage</Filter>
+    </ClInclude>
+    <ClInclude Include="InfraredImage\ImageProcessor.h">
+      <Filter>头文件\InfraredImage</Filter>
+    </ClInclude>
+    <ClInclude Include="InfraredImage\PseudoColorTable.h">
+      <Filter>头文件\InfraredImage</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Config.h">
+      <Filter>头文件\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\ITAWrapper.h">
+      <Filter>头文件\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Monitor.h">
+      <Filter>头文件\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Parser.h">
+      <Filter>头文件\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\Debugger.h">
+      <Filter>头文件\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\GuideLog.h">
+      <Filter>头文件\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\PortingAPI.h">
+      <Filter>头文件\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="MT\EmissCurves.h">
+      <Filter>头文件\MT</Filter>
+    </ClInclude>
+    <ClInclude Include="MT\MeasureTempCore.h">
+      <Filter>头文件\MT</Filter>
+    </ClInclude>
+    <ClInclude Include="MT\MeasureTempCoreTEC.h">
+      <Filter>头文件\MT</Filter>
+    </ClInclude>
+    <ClInclude Include="MT\MTBase.h">
+      <Filter>头文件\MT</Filter>
+    </ClInclude>
+    <ClInclude Include="MT\MTTEC.h">
+      <Filter>头文件\MT</Filter>
+    </ClInclude>
+    <ClInclude Include="MT\MTWrapper.h">
+      <Filter>头文件\MT</Filter>
+    </ClInclude>
+    <ClInclude Include="Secure\AES.h">
+      <Filter>头文件\Secure</Filter>
+    </ClInclude>
+    <ClInclude Include="Secure\Base64.h">
+      <Filter>头文件\Secure</Filter>
+    </ClInclude>
+    <ClInclude Include="Secure\CRC32.h">
+      <Filter>头文件\Secure</Filter>
+    </ClInclude>
+    <ClInclude Include="Timo\AutoFocus.h">
+      <Filter>头文件\Timo</Filter>
+    </ClInclude>
+    <ClInclude Include="Timo\DetectorWrapper.h">
+      <Filter>头文件\Timo</Filter>
+    </ClInclude>
+    <ClInclude Include="Timo\Flash120.h">
+      <Filter>头文件\Timo</Filter>
+    </ClInclude>
+    <ClInclude Include="Timo\Timo120.h">
+      <Filter>头文件\Timo</Filter>
+    </ClInclude>
+    <ClInclude Include="InfraredImage\CustomPalette.h">
+      <Filter>头文件\InfraredImage</Filter>
+    </ClInclude>
+    <ClInclude Include="ITAFireDRC.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AppAlg\CIrFireDrc.h">
+      <Filter>头文件\AppAlg</Filter>
+    </ClInclude>
+    <ClInclude Include="Custom\RefrigerationMeasureCore.h">
+      <Filter>头文件\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="ITARefriger.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\CollectK.h">
+      <Filter>头文件\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\StartReview.h">
+      <Filter>头文件\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="ITAFusion.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AppAlg\ImageFusion.h">
+      <Filter>头文件\AppAlg</Filter>
+    </ClInclude>
+    <ClInclude Include="ITAToolBox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolBox\ToolBox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ITAMeasureTool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolBox\MeasureTool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\ita_log.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MT\PolygonAnalysiser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AppAlg\DeviceTempertrueAnalysis.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AppAlg\CInfraredAF.cpp">
+      <Filter>源文件\AppAlg</Filter>
+    </ClCompile>
+    <ClCompile Include="AppAlg\ITALaserAF.cpp">
+      <Filter>源文件\AppAlg</Filter>
+    </ClCompile>
+    <ClCompile Include="AppAlg\SRBicubic.cpp">
+      <Filter>源文件\AppAlg</Filter>
+    </ClCompile>
+    <ClCompile Include="Custom\BBMeasureCore.cpp">
+      <Filter>源文件\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="Custom\ITABB.cpp">
+      <Filter>源文件\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="Custom\ITACoin.cpp">
+      <Filter>源文件\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="Custom\ITACustom.cpp">
+      <Filter>源文件\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="InfraredImage\CInfraredCore.cpp">
+      <Filter>源文件\InfraredImage</Filter>
+    </ClCompile>
+    <ClCompile Include="InfraredImage\ImageProcessor.cpp">
+      <Filter>源文件\InfraredImage</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\ITA.cpp">
+      <Filter>源文件\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\ITAWrapper.cpp">
+      <Filter>源文件\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Monitor.cpp">
+      <Filter>源文件\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Parser.cpp">
+      <Filter>源文件\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Module\Debugger.cpp">
+      <Filter>源文件\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="Module\GuideLog.cpp">
+      <Filter>源文件\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="Module\PortingAPI.cpp">
+      <Filter>源文件\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="MT\MeasureTempCore.cpp">
+      <Filter>源文件\MT</Filter>
+    </ClCompile>
+    <ClCompile Include="MT\MeasureTempCoreTEC.cpp">
+      <Filter>源文件\MT</Filter>
+    </ClCompile>
+    <ClCompile Include="MT\MTTEC.cpp">
+      <Filter>源文件\MT</Filter>
+    </ClCompile>
+    <ClCompile Include="MT\MTWrapper.cpp">
+      <Filter>源文件\MT</Filter>
+    </ClCompile>
+    <ClCompile Include="Secure\AES.cpp">
+      <Filter>源文件\Secure</Filter>
+    </ClCompile>
+    <ClCompile Include="Secure\Base64.cpp">
+      <Filter>源文件\Secure</Filter>
+    </ClCompile>
+    <ClCompile Include="Secure\CRC32.cpp">
+      <Filter>源文件\Secure</Filter>
+    </ClCompile>
+    <ClCompile Include="Timo\AutoFocus.cpp">
+      <Filter>源文件\Timo</Filter>
+    </ClCompile>
+    <ClCompile Include="Timo\DetectorWrapper.cpp">
+      <Filter>源文件\Timo</Filter>
+    </ClCompile>
+    <ClCompile Include="Timo\Flash120.cpp">
+      <Filter>源文件\Timo</Filter>
+    </ClCompile>
+    <ClCompile Include="Timo\Timo120.cpp">
+      <Filter>源文件\Timo</Filter>
+    </ClCompile>
+    <ClCompile Include="InfraredImage\CustomPalette.cpp">
+      <Filter>源文件\InfraredImage</Filter>
+    </ClCompile>
+    <ClCompile Include="AppAlg\CIrFireDrc.cpp">
+      <Filter>源文件\AppAlg</Filter>
+    </ClCompile>
+    <ClCompile Include="AppAlg\ITAFireDRC.cpp">
+      <Filter>源文件\AppAlg</Filter>
+    </ClCompile>
+    <ClCompile Include="Custom\ITARefriger.cpp">
+      <Filter>源文件\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="Custom\RefrigerationMeasureCore.cpp">
+      <Filter>源文件\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\CollectK.cpp">
+      <Filter>源文件\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\StartReview.cpp">
+      <Filter>源文件\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="AppAlg\ImageFusion.cpp">
+      <Filter>源文件\AppAlg</Filter>
+    </ClCompile>
+    <ClCompile Include="AppAlg\ITAFusion.cpp">
+      <Filter>源文件\AppAlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolBox\ITAToolBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolBox\ToolBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolBox\MeasureTool.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolBox\ITAMeasureTool.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Module\ita_log.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\ObjectAnalysis.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MT\PolygonAnalysiser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AppAlg\DeviceTempertrueAnalysis.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

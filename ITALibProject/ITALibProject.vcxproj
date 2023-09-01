@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ADB248DD-86E0-4D78-83C7-BD8724382E0D}</ProjectGuid>
+    <RootNamespace>ITALibProject</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>ITA</TargetName>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <TargetName>ITA</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>ITA</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>ITA</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WINDOWS_PLATFORM;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WINDOWS_PLATFORM;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WINDOWS_PLATFORM;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WINDOWS_PLATFORM;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AppAlg\CInfraredAF.h" />
+    <ClInclude Include="AppAlg\CIrFireDrc.h" />
+    <ClInclude Include="AppAlg\DeviceTempertrueAnalysis.h" />
+    <ClInclude Include="AppAlg\ImageFusion.h" />
+    <ClInclude Include="AppAlg\SRBicubic.h" />
+    <ClInclude Include="Base\CollectK.h" />
+    <ClInclude Include="Base\Config.h" />
+    <ClInclude Include="Base\ITAWrapper.h" />
+    <ClInclude Include="Base\Monitor.h" />
+    <ClInclude Include="Base\Parser.h" />
+    <ClInclude Include="Base\StartReview.h" />
+    <ClInclude Include="Custom\BBMeasureCore.h" />
+    <ClInclude Include="Custom\ITACoin.h" />
+    <ClInclude Include="Custom\RefrigerationMeasureCore.h" />
+    <ClInclude Include="ERROR.h" />
+    <ClInclude Include="InfraredImage\CInfraredCore.h" />
+    <ClInclude Include="InfraredImage\CustomPalette.h" />
+    <ClInclude Include="InfraredImage\ImageProcessor.h" />
+    <ClInclude Include="InfraredImage\PseudoColorTable.h" />
+    <ClInclude Include="ITA.h" />
+    <ClInclude Include="ITABB.h" />
+    <ClInclude Include="ITACustom.h" />
+    <ClInclude Include="ITADTD.h" />
+    <ClInclude Include="ITAFireDRC.h" />
+    <ClInclude Include="ITAFusion.h" />
+    <ClInclude Include="ITALaserAF.h" />
+    <ClInclude Include="ITAMeasureTool.h" />
+    <ClInclude Include="ITARefriger.h" />
+    <ClInclude Include="ITAToolBox.h" />
+    <ClInclude Include="Module\Debugger.h" />
+    <ClInclude Include="Module\GuideLog.h" />
+    <ClInclude Include="Module\ita_log.h" />
+    <ClInclude Include="Module\PortingAPI.h" />
+    <ClInclude Include="MT\EmissCurves.h" />
+    <ClInclude Include="MT\MeasureTempCore.h" />
+    <ClInclude Include="MT\MeasureTempCoreTEC.h" />
+    <ClInclude Include="MT\MTBase.h" />
+    <ClInclude Include="MT\MTTEC.h" />
+    <ClInclude Include="MT\MTWrapper.h" />
+    <ClInclude Include="MT\PolygonAnalysiser.h" />
+    <ClInclude Include="Secure\AES.h" />
+    <ClInclude Include="Secure\Base64.h" />
+    <ClInclude Include="Secure\CRC32.h" />
+    <ClInclude Include="Timo\AutoFocus.h" />
+    <ClInclude Include="Timo\DetectorWrapper.h" />
+    <ClInclude Include="Timo\Flash120.h" />
+    <ClInclude Include="Timo\Timo120.h" />
+    <ClInclude Include="ToolBox\MeasureTool.h" />
+    <ClInclude Include="ToolBox\ToolBox.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AppAlg\CInfraredAF.cpp" />
+    <ClCompile Include="AppAlg\CIrFireDrc.cpp" />
+    <ClCompile Include="AppAlg\DeviceTempertrueAnalysis.cpp" />
+    <ClCompile Include="AppAlg\ImageFusion.cpp" />
+    <ClCompile Include="AppAlg\ITAFireDRC.cpp" />
+    <ClCompile Include="AppAlg\ITAFusion.cpp" />
+    <ClCompile Include="AppAlg\ITALaserAF.cpp" />
+    <ClCompile Include="AppAlg\SRBicubic.cpp" />
+    <ClCompile Include="Base\CollectK.cpp" />
+    <ClCompile Include="Base\ITA.cpp" />
+    <ClCompile Include="Base\ITAWrapper.cpp" />
+    <ClCompile Include="Base\Monitor.cpp" />
+    <ClCompile Include="Base\ObjectAnalysis.cpp" />
+    <ClCompile Include="Base\Parser.cpp" />
+    <ClCompile Include="Base\StartReview.cpp" />
+    <ClCompile Include="Custom\BBMeasureCore.cpp" />
+    <ClCompile Include="Custom\ITABB.cpp" />
+    <ClCompile Include="Custom\ITACoin.cpp" />
+    <ClCompile Include="Custom\ITACustom.cpp" />
+    <ClCompile Include="Custom\ITARefriger.cpp" />
+    <ClCompile Include="Custom\RefrigerationMeasureCore.cpp" />
+    <ClCompile Include="InfraredImage\CInfraredCore.cpp" />
+    <ClCompile Include="InfraredImage\CustomPalette.cpp" />
+    <ClCompile Include="InfraredImage\ImageProcessor.cpp" />
+    <ClCompile Include="Module\Debugger.cpp" />
+    <ClCompile Include="Module\GuideLog.cpp" />
+    <ClCompile Include="Module\ita_log.cpp" />
+    <ClCompile Include="Module\PortingAPI.cpp" />
+    <ClCompile Include="MT\MeasureTempCore.cpp" />
+    <ClCompile Include="MT\MeasureTempCoreTEC.cpp" />
+    <ClCompile Include="MT\MTTEC.cpp" />
+    <ClCompile Include="MT\MTWrapper.cpp" />
+    <ClCompile Include="MT\PolygonAnalysiser.cpp" />
+    <ClCompile Include="Secure\AES.cpp" />
+    <ClCompile Include="Secure\Base64.cpp" />
+    <ClCompile Include="Secure\CRC32.cpp" />
+    <ClCompile Include="Timo\AutoFocus.cpp" />
+    <ClCompile Include="Timo\DetectorWrapper.cpp" />
+    <ClCompile Include="Timo\Flash120.cpp" />
+    <ClCompile Include="Timo\Timo120.cpp" />
+    <ClCompile Include="ToolBox\ITAMeasureTool.cpp" />
+    <ClCompile Include="ToolBox\ITAToolBox.cpp" />
+    <ClCompile Include="ToolBox\MeasureTool.cpp" />
+    <ClCompile Include="ToolBox\ToolBox.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
